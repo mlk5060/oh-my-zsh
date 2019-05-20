@@ -242,7 +242,7 @@ build_prompt() {
   prompt_status
   prompt_virtualenv
   prompt_aws
-  prompt_context
+#  prompt_context !!! INCLUDES THE USERNAME AND HOST IN THE PROMPT - I DON'T WANT THIS! !!!
   prompt_dir
   prompt_git
   prompt_bzr
