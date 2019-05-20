@@ -89,7 +89,7 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)%n@%m"
+     prompt_segment black default "%(!.%{%F{yellow}%}.)%n@%m"
   fi
 }
 
@@ -242,7 +242,7 @@ build_prompt() {
   prompt_status
   prompt_virtualenv
   prompt_aws
-#  prompt_context !!! INCLUDES THE USERNAME AND HOST IN THE PROMPT - I DON'T WANT THIS! !!!
+#  prompt_context
   prompt_dir
   prompt_git
   prompt_bzr
